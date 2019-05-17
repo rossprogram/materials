@@ -1,6 +1,6 @@
 all: $(patsubst %.tex, %.pdf, $(wildcard *.tex))
 
-%.pdf: %.tex
+%.pdf: %.tex ross.cls
 	pdflatex $<
 	pdflatex $<
 

@@ -34,6 +34,8 @@
 \newcommand{\orientationlocation}{Spangler Learning Center}
 \newcommand{\checkinlocation}{Lynam Hall}
 \newcommand{\totalfee}{\$5000}
+\newcommand{\campus}{Ohio Dominican University}
+\newcommand{\feeduedate}{June 10, \the\year}
 
 \usepackage{advdate}
 \usepackage{datetime}
@@ -41,7 +43,7 @@
 \newcommand{\finishfriday}{\SetDate[02/08/2019]}
 
 \usepackage{calc}
-\newcommand{\blank}[3]{\begin{Form}\raisebox{-2ex}{\color{gray}{\makebox[0in][l]{\footnotesize #2}}}\underline{\TextField[width=#1,name=#3]{}}\end{Form}}
+\newcommand{\blank}[3]{\begin{Form}\raisebox{-2ex}{\color{gray}{\makebox[0in][l]{\makebox[#1][c]{\footnotesize #2}}}}\underline{\TextField[width=#1,name=#3]{}}\end{Form}}
 
 \newcommand{\yesblanknoblank}[1]{\begin{Form}%
 \ChoiceMenu[radio,name=#1]{}{Yes=Yes}%
