@@ -39,8 +39,9 @@
 
 \usepackage{advdate}
 \usepackage{datetime}
-\newcommand{\startsunday}{\SetDate[23/06/2019]}
-\newcommand{\finishfriday}{\SetDate[02/08/2019]}
+\newdateformat{rossdate}{\THEDAY\ \monthname[\THEMONTH] \THEYEAR}
+\newcommand{\startsunday}{\rossdate\SetDate[23/06/2019]}
+\newcommand{\finishfriday}{\rossdate\SetDate[02/08/2019]}
 
 \usepackage{calc}
 \newcommand{\blank}[3]{\begin{Form}\raisebox{-2ex}{\color{gray}{\makebox[0in][l]{\makebox[#1][c]{\footnotesize #2}}}}\underline{\TextField[width=#1,name=#3]{}}\end{Form}}
