@@ -14,3 +14,5 @@ install:
 	cp participation-agreement.pdf build
 	cp program-fees.pdf build
 	cp standards-of-behavior.pdf build
+	cp bring.pdf build
+	cp program-rules.pdf build
