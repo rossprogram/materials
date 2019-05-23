@@ -44,7 +44,7 @@
 \newcommand{\finishfriday}{\rossdate\SetDate[02/08/2019]}
 
 \usepackage{calc}
-\newcommand{\blank}[3]{\begin{Form}\raisebox{-2ex}{\color{gray}{\makebox[0in][l]{\makebox[#1][c]{\footnotesize #2}}}}\underline{\TextField[width=#1,name=#3]{}}\end{Form}}
+\newcommand{\blank}[3]{\begin{Form}\raisebox{-2ex}{\color{gray}{\raisebox{0ex}[0ex][1ex]{\makebox[0in][l]{\makebox[#1][c]{\footnotesize #2}}}}}\underline{\TextField[width=#1,name=#3]{}}\end{Form}}
 
 \newcommand{\yesblanknoblank}[1]{\begin{Form}%
 \ChoiceMenu[radio,name=#1]{}{Yes=Yes}%
