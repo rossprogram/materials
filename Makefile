@@ -15,5 +15,6 @@ install:
 	cp program-fees.pdf build
 	cp background-check-authorization.pdf build
 	cp standards-of-behavior.pdf build
+	cp credit-card-payment.pdf build
 	cp bring.pdf build
 	cp program-rules.pdf build
