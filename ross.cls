@@ -33,9 +33,9 @@
 \newcommand{\dormaddress}{1216 Sunbury Road, Columbus, OH 43219}
 \newcommand{\orientationlocation}{Spangler Learning Center}
 \newcommand{\checkinlocation}{Lynam Hall}
-\newcommand{\totalfee}{\$5000}
+\newcommand{\totalfee}{\$6000}
 \newcommand{\campus}{Ohio Dominican University}
-\newcommand{\feeduedate}{June 10, \the\year}
+\newcommand{\feeduedate}{May 20, \the\year}
 
 \usepackage{advdate}
 \usepackage{datetime}
