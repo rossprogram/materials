@@ -29,6 +29,7 @@
 \setlength{\parindent}{0in}
 \setlength{\parskip}{1.5ex}
 
+
 \newcommand{\dormname}{Lynam Hall}
 \newcommand{\dormaddress}{1216 Sunbury Road, Columbus, OH 43219}
 \newcommand{\orientationlocation}{Spangler Learning Center}
