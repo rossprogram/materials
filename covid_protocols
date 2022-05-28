@@ -1,0 +1,148 @@
+\documentclass{ross}
+\usepackage[most]{tcolorbox}
+
+%\usepackage{fontspec}
+%\setmainfont{Roboto}
+%\setsansfont{Noto Sans JP}
+%\setmonofont{Roboto Mono}
+
+\usepackage{xargs}
+\usepackage{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+
+\title{Covid Safety Protocols}
+\geometry{top=1.5in,bottom=1in}
+\usepackage{parskip}
+\begin{document}
+\maketitle
+
+The Ross Mathematics Foundation intends to implement the following policies (in addition to any policies of the host institution) to help keep participants in the Ross Mathematics Program as well as those in the surrounding community safe by limiting the spread of COVID-19. These policies will be applied for the in-person programs that will run in the Summer 2022 session. 
+
+\tableofcontents
+
+\addcontentsline{toc}{section}{Vaccination Policy}
+\section*{Vaccination Policy}
+
+The Ross Mathematics Foundation's vaccine policy is as follows:
+\begin{itemize}
+    \item {\bf All Ross participants including first-year students, junior counselors, counselors, and faculty (the ``Community'')  are required to submit proof of full vaccination against COVID-19 to 
+    \begin{center}
+        \href{mailto:medical@rossprogram.org}
+        {medical@rossprogram.org}
+    \end{center}
+    prior to the start of the Program.} At the time of this writing, an individual is considered fully vaccinated to mean that they meet at least one of the following conditions:
+    \begin{itemize}
+        \item Completed the primary vaccine series for Pfizer or Moderna within the past five months;
+        \item Completed the J\&J vaccine within the past two months; or 
+        \item Completed a full vaccination series and have received a booster. 
+    \end{itemize} 
+    The meaning of ``fully vaccinated'' is subject to change in accordance with guidelines from local, state, and federal health officials. 
+    \item Any potential member of the Community who does not submit proof of vaccination {\bf will not be allowed to participate in the Program.}
+\end{itemize}
+
+
+\addcontentsline{toc}{section}{Community Responsibilities}
+\section*{Community Responsibilities}
+
+All members of the Community must accept the following responsibilities to maintain a culture where health and safety are prioritized.
+
+\addcontentsline{toc}{subsection}{Surveillance Testing}
+\subsection*{Surveillance Testing}
+
+As variants of COVID-19 continue to evolve, it's important for members of the Community to monitor their health in a number of ways. In particular, we expect Community members to participate in COVID-19 surveillance testing on a bi-weekly basis. The details of this policy are as follows:
+
+\begin{itemize}
+    \item Two types of viral tests may be used: nucleic acid amplification tests and antigen tests. The Program will provide antigen tests for Community members.
+    \item Members of the Community will be expected to submit COVID-19 tests at the beginning of the first, third, and fifth weeks of the program. 
+    \item If a member of the community fails to submit a COVID-19 test by the appropriate time, then they will be quarantined until a negative COVID-19 test can be provided. 
+    \item If a member of the Community tests positive for COVID-19, then they will be expected to quarantine in the manner described in the section ``Quarantine \& Isolation'' of this document.
+\end{itemize}
+
+
+\addcontentsline{toc}{subsection}{Face Mask Policy}
+\subsection*{Face Mask Policy}
+
+Face coverings have proven to be a valuable tool in fighting the spread of COVID-19. Accordingly, we expect participants to adhere to the following face mask requirements:
+\begin{itemize}
+    \item Wearing an appropriate face mask is required throughout all indoor campus spaces except for dining areas and private dorm rooms, as specified below.
+    \item Face coverings must be worn appropriately; a properly worn mask should cover both your nose and mouth while fitting securely under your chin.
+    \item Appropriate face masks include:
+    \begin{itemize}
+        \item Purchased or homemade multi-layer cloth masks, or
+        \item disposable multi-layered procedural masks.
+    \end{itemize}
+    \item Face shields are not an acceptable substitute for face masks.
+    \item Participants are required to wear face masks at all times while in dining areas except for when they are eating. Similarly, momentarily displacing a face mask indoors to sip from a drink is acceptable as long as masking resumes between sips. 
+    \item Participants are {\bf not required} to wear a face covering when in their private residential hall rooms.
+    
+\end{itemize}
+
+\addcontentsline{toc}{subsection}{Healthy Behaviors}
+\subsection*{Healthy Behaviors}
+
+In addition to the communal responsibilities described in the previous section, Ross community members must also take responsibility for their own personal health. In particular, Ross community members agree to:
+
+\begin{itemize}
+    \item Wash hands often with soap for at least 20 seconds; or, if water is unavailable, use hand sanitizer with at least 60\% alcohol content.
+    \item Avoid touching your eyes, nose, or mouth with unwashed hands. And avoid physical contact with others (e.g., shaking hands).
+    \item Cover your mouth and nose while sneezing or coughing.
+    \item Avoid contact with others if you're feeling unwell. 
+\end{itemize}
+
+
+\addcontentsline{toc}{section}{Personal Responsibilities}
+\section*{Personal Responsibilities}
+
+COVID-19 and its variants are highly infectious; despite our best efforts it may happen that a member of our community falls ill. This section details how we monitor for and what we do in that unfortunate event. 
+
+
+\addcontentsline{toc}{subsection}{Symptom Monitoring}
+\subsection*{Symptom Monitoring}
+
+It's important for members of the Ross community to pay attention to their own health. In particular, if you're exhibiting symptoms of COVID-19, then:
+\begin{itemize}
+    \item {\bf Please do not leave your private residential hall room.} 
+    \item Contact a Ross faculty member or Staff via email, phone, text, or instant message so that they may find you a health care provider. 
+\end{itemize}
+
+It can be difficult to differentiate between things like hay-fever (a common issue especially in the mid-western US) and mild symptoms of COVID-19. The following therefore will serve as criteria to define ``exhibiting symptoms of COVID-19'':
+
+\begin{itemize}
+    \item One or more of the following symptoms:
+    \begin{itemize}
+        \item Fever of 100.4˚ F (or 38˚ C )
+        \item A new cough or change in an existing cough
+        \item Difficulty breathing or shortness of breath
+    \end{itemize}
+    \item Or two or more of the following symptoms:
+    \begin{itemize}
+        \item Chills
+        \item Repeated shaking with chills
+        \item Muscle pain
+        \item Headache
+        \item Sore throat
+        \item Loss of taste or smell
+    \end{itemize}
+\end{itemize}
+
+\addcontentsline{toc}{subsection}{Quarantine \& Isolation}
+\subsection*{Quarantine \& Isolation}
+
+\begin{itemize}
+    \item Members of the Community who test positive for COVID-19, regardless of their vaccination status, must quarantine for a period of 10 days in an area of the residence hall (or otherwise) that is isolated from the rest of the Community. 
+    \item If a member of the Community is a close contact of another member who tests positive for COVID-19 but is not experiencing symptoms of COVID-19, then they do not need to quarantine. But they are urged to closely monitor their health over a period of 10 days.
+    \item If a member of the Community is a close contact of another member who tests positive for COVID-19 and is also experiencing symptoms of COVID-19 (see above), then they are required to quarantine for a period of 10 days. On day 7, if they can provide proof of a negative COVID-19 test, then they may return to normal participation in the Program.
+\end{itemize}
+
+\addcontentsline{toc}{section}{Committment to Best Practices}
+\section*{Commitment to Best Practices}
+
+The Foundation is committed to the health and safety of its Community members. Toward that end, our policies are subject to change according to the guidelines set forth by:
+\begin{itemize}
+    \item the host institution for the Program;
+    \item local, state, and federal health departments; 
+    \item CDC guidelines and recommendations. 
+\end{itemize}
+
+
+\end{document}
