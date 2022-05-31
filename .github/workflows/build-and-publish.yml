@@ -12,16 +12,114 @@ jobs:
           root_file: bring.tex
           compiler: pdflatex
           args: -interaction=nonstopmode
+      - name: bring 
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: bring.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
       - name: program-fees
         uses: dante-ev/latex-action@latest
         with:
           root_file: program-fees.tex
           compiler: pdflatex
           args: -interaction=nonstopmode
+      - name: program-fees
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: program-fees.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: wire-transfer 
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: wire-transfer.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: wire-transfer
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: wire-transfer.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: medical-authorization 
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: medical-authorization.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: medical-authorization
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: medical-authorization.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: standards-of-behavior 
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: standards-of-behavior.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: standards-of-behavior
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: standards-of-behavior.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: driving-directions-ohio 
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: driving-directions-ohio.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: driving-directions-ohio
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: driving-directions-ohio.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: driving-directions-indiana 
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: driving-directions-indiana.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: driving-directions-indiana
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: driving-directions-indiana.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: program-rules 
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: program-rules.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: program-rules
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: program-rules.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: participation-agreement 
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: participation-agreement.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
+      - name: participation-agreement
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: participation-agreement.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
       - name: create build directory 
         run: mkdir build
       - name: move built assets 
         run: mv *.pdf build
+      - name: remove logo
+        run: rm build/logo.pdf
       - name: Publish to GitHub pages
         if: success() 
         uses: crazy-max/ghaction-github-pages@v3
