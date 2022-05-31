@@ -11,10 +11,16 @@ jobs:
         with:
           root_file: bring.tex
           compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
+          args: -interaction=nonstopmode
+      - name: program-fees
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: program-fees.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
       - name: Publish to GitHub pages
-        if: success() && github.ref == 'refs/heads/main'
-        uses: crazy-max/ghaction-github-pages@v1
+        if: success() 
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
           build_dir: .
