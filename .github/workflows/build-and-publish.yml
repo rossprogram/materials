@@ -30,18 +30,6 @@ jobs:
           root_file: program-fees.tex
           compiler: pdflatex
           args: -interaction=nonstopmode
-      - name: wire-transfer 
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: wire-transfer.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode
-      - name: wire-transfer
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: wire-transfer.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode
       - name: medical-authorization 
         uses: dante-ev/latex-action@latest
         with:
