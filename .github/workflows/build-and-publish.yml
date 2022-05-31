@@ -19,10 +19,9 @@ jobs:
           compiler: pdflatex
           args: -interaction=nonstopmode
       - name: create build directory 
-        run: |
-	  mkdir build
-	  mv bring.pdf build
-	  mv program-fees.pdf build
+        run: mkdir build
+      - name: move built assets 
+        run: mv *.pdf build
       - name: Publish to GitHub pages
         if: success() 
         uses: crazy-max/ghaction-github-pages@v3
