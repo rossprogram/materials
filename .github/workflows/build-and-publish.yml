@@ -18,11 +18,16 @@ jobs:
           root_file: program-fees.tex
           compiler: pdflatex
           args: -interaction=nonstopmode
+      - name: create build directory 
+        run: |
+	  mkdir build
+	  mv bring.pdf build
+	  mv program-fees.pdf build
       - name: Publish to GitHub pages
         if: success() 
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
-          build_dir: .
+          build_dir: build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
