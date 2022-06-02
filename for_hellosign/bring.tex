@@ -1,0 +1,119 @@
+\documentclass[11pt]{ross}
+\title{What to Bring?}
+
+\newcommand{\spa}{\hspace*{1cm}}
+\newcommand{\spz}{\hspace*{5mm}}
+
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+\usepackage[most]{tcolorbox}
+
+\renewcommand{\baselinestretch}{2}
+
+\newtcbox{\genblank}[1][]{
+    enhanced,
+    arc = 1pt,
+    nobeforeafter,
+    tcbox raise base,
+    size=small,
+    width=1in,
+    height=0.4in,
+    overlay unbroken and first={
+        \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #1};
+        }
+    }
+\newtcbox{\wesign}[2][]{
+        enhanced,
+        nobeforeafter,
+        tcbox raise base,
+        size=small,
+        width=#1,
+        overlay unbroken and first={
+            \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #2};
+            \node[anchor=center] at (frame.center)
+            {\includegraphics[width=2in]{sign-pdf.pdf}};
+            }
+    }
+
+\newcommand{\blankdate}{\genblank[date]{\phantom{XX/XX/XXXX}}\ }
+\newcommand{\blankemployee}{\genblank[Employee]{\phantom{gFIRST/ MIDDLE/ LAST NAME}}\ }
+\newcommand{\blankaddress}{\genblank[Address]{
+    \phantom{NUMBER/ STREET / CITy/ STATE/PROVINCE/ COUNTRY }}}
+\newcommand{\blankwesign}{\genblank[Ross Mathematics Foundation]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+\newcommand{\blanktheysign}{\genblank[Employee]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+
+\usepackage{fontspec}
+\setmainfont{Roboto}
+\setsansfont{Noto Sans JP}
+\setmonofont{Roboto Mono}
+
+
+\begin{document}
+\maketitle
+ \begin{enumerate}[label=(\arabic*),itemsep=2em,topsep=-1em]
+
+\item \textbf{What to bring?}
+ \begin{enumerate}[label=(\alph*),itemsep=0.5em,topsep=0em]
+ \item Bring clothes suitable for hot summer weather outside, and cool
+   temperatures in air-conditioned buildings.  Bring (or plan to
+   purchase) personal toiletries like soap, shampoo, deodorant,
+   toothbrush and toothpaste, comb, brush, nail clippers, etc.
+ \item Bring a pillow.  Clean sheets, pillowcase, and towel are
+provided.  However, pillows are not distributed by the dorm staff, so
+you should bring your own pillow.  If you want a blanket, you may
+bring one.
+ \item Appliances like refrigerators and microwave ovens are \textbf{not} provided in dorm rooms.
+ \item Clothes washers and dryers are available.  The Ross Program
+will provide detergent for everyone to use.
+  \item You are very much encouraged to bring a phone.
+  \item You are encouraged to bring a laptop computer.
+ \item  You may bring school supplies like paper, 
+   pencils, pens, notebooks, and folders. There will be opportunities 
+   to purchase additional items after you arrive.
+\end{enumerate}
+\item \textbf{What not to bring?}
+  \begin{enumerate}[label=(\alph*),itemsep=0.5em,topsep=0em]
+  \item Do not bring a gaming system, music player with speakers, 
+    or other entertainment devices.  
+    Counselors will confiscate such equipment if you bring it to the
+    Ross Program.
+  \item Student phones and computers are permitted, but their use is
+    restricted: Make telephone calls only within your dorm room.
+    Please do not use your phone or computer to play games, surf the internet, or
+    look up information that undercuts the process of your
+    mathematical explorations.
+  \item Do not bring math books, number theory textbooks, or other references.  
+    The Ross Number Theory course is self-contained, with no need for 
+    outside texts.  It is far better to be puzzled by hard math problems 
+    and discuss them with others, rather than searching for answers online.
+  \item Do not bring skateboards, bicycles, or other transportation devices.
+    Ross participants are asked stay on campus and walk to classes and the cafeteria.
+  \item Do not bring valuable items or large amounts of cash.  The
+    campus is a relatively safe place with little crime.  But
+    outsiders can sometimes sneak into the dormitory building and look
+    for open doors when no one is there.
+  \item Do not plan other activities while at the Ross Program. \textbf{All of 
+    your time, effort, and focus will be on the Ross courses and problem 
+    sets.}  There is no opportunity for you to take an on-line course, 
+    prepare for standardized tests, write essays for your upcoming English 
+    class, or read the book recommended by your college advisor.
+  \item There is free time for students to play outdoor games (soccer, Ultimate, 
+    basketball, etc), or to play music on a University piano or your own 
+    instrument. (But not in the dorm where others could be disturbed.)
+   \item Please do not engage in activities like indoor gaming, card
+playing, preparing for future tests, working on non-math classes, or
+reading books unrelated to Ross courses. Those activities use up the
+intellectual energy that should be spent on Ross math problems!  These
+six weeks of mathematical focus are a special time in your life, so
+make the most of the opportunity.
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
+
+
+

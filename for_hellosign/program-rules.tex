@@ -1,0 +1,120 @@
+\documentclass{ross}
+
+\usepackage[most]{tcolorbox}
+
+\renewcommand{\baselinestretch}{2}
+
+\newtcbox{\genblank}[1][]{
+    enhanced,
+    arc = 1pt,
+    nobeforeafter,
+    tcbox raise base,
+    size=small,
+    width=1in,
+    height=0.4in,
+    overlay unbroken and first={
+        \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #1};
+        }
+    }
+\newtcbox{\wesign}[2][]{
+        enhanced,
+        nobeforeafter,
+        tcbox raise base,
+        size=small,
+        width=#1,
+        overlay unbroken and first={
+            \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #2};
+            \node[anchor=center] at (frame.center)
+            {\includegraphics[width=2in]{sign-pdf.pdf}};
+            }
+    }
+
+\newcommand{\blankdate}{\genblank[date]{\phantom{XX/XX/XXXX}}\ }
+\newcommand{\blankemployee}{\genblank[Employee]{\phantom{gFIRST/ MIDDLE/ LAST NAME}}\ }
+\newcommand{\blankaddress}{\genblank[Address]{
+    \phantom{NUMBER/ STREET / CITy/ STATE/PROVINCE/ COUNTRY }}}
+\newcommand{\blankwesign}{\genblank[Ross Mathematics Foundation]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+\newcommand{\blanktheysign}{\genblank[Employee]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+
+\usepackage{fontspec}
+\setmainfont{Roboto}
+\setsansfont{Noto Sans JP}
+\setmonofont{Roboto Mono}
+
+
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+\title{Program Rules}
+\begin{document}
+\maketitle
+Participants are {\bf not} allowed to bring the following items to the Ross
+Program:
+\begin{itemize}
+\item Televisions, games or gaming systems, music players with speakers, or similar systems,
+\item Valuable items or large amounts of cash (there are ATMs on campus),
+\item Automobiles, bicycles, skateboards, etc.
+\end{itemize}
+
+\bigskip\hrule
+\textbf{Cell Phones:} Students may bring cell phones, but there are restrictions. 
+\begin{enumerate}[label=(\roman*),itemsep=0.5em,topsep= 0em]
+
+\item {\it Classes.}  All phones must be off during classes or lectures. 
+
+\item {\it Telephone and text.}  Do not make phone calls or send text messages 
+where those actions might distract other people.
+
+\item {\it Internet.} Avoid internet use during the Ross Program! 
+It is tempting to read newsfeeds, play online games, watch videos, read (or write) blogs, 
+find friends on Facebook, and surf through websites.  But such activities are huge time-wasters, 
+and will distract you and your friends from concentrating on the challenging math problems we thrive on.  \\[5pt]
+Working with math-oriented websites can {\it seem} productive. But if you're working on a 
+hard Ross problem and then read related ideas online or in a book, you are under-cutting 
+your own process of discovery. Work through the problems by your own efforts, and by having 
+mathematial conversations with colleagues, JCs, and counselors.  Ross's central goal is to 
+help you learn how to think like a mathematician.\\
+\hspace*{1cm} Solutions are not as satisfying if you looked up the answers.
+
+\item {\it Cameras.}  It is fine to take photos of friends in order to record and remember fun times.  
+But some photos are not appropriate.  Be sure that anyone in a photo you take has given you permission 
+for that picture.  This is especially important for any photos you send to others, or images that you post on social media. 
+
+\item{\it Tracking.}  When you arrive on campus, a Ross staff member
+may ask you to visit a certain Ross Program website and approve
+location access.  Then the Ross administrators can find you in
+emergencies. You may remove those permissions at the end of the six
+weeks.
+\end{enumerate}
+
+To help ensure basic safety, students are supervised 
+by Ross Counselors at all times.
+
+Ross participants may not leave the dormitory after dark unless 
+in the company of a Counselor and going to a scheduled Ross activity.
+
+\textbf{Do not leave the campus} unless absolutely necessary, and in
+the company of a Counselor or other responsible adult.
+
+We work hard to build an environment where students can focus on hard math problems
+without distractions, maintain their mathematical momentum, 
+and build a strong feeling of community within the dormitory. 
+A trip away from the Ross community will decrease that momentum.
+
+\underline{Off-campus Excursions}.  To leave campus with
+an adult friend or family member, you must complete a {\it Leave Request Form} 
+and have it approved by Ross staff prior to departure.
+
+Standard rules regarding respect and behavior apply in the Ross
+Program, just as they do in high schools. These basic rules of civil society hold 
+for the duration of our summer program, both in and out of the classroom. 
+Please review the Ross Program's \textit{Standards of Behavior} for
+a clearer statement of what behaviors this involves.
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

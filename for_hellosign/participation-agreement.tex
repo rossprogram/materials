@@ -1,0 +1,181 @@
+\documentclass{ross}
+\title{Program Participation Agreement}
+
+\usepackage[most]{tcolorbox}
+
+\renewcommand{\baselinestretch}{2}
+
+\newtcbox{\genblank}[1][]{
+    enhanced,
+    arc = 1pt,
+    nobeforeafter,
+    tcbox raise base,
+    size=small,
+    width=1in,
+    height=0.25in,
+    overlay unbroken and first={
+        \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #1};
+        }
+    }
+\newtcbox{\wesign}[2][]{
+        enhanced,
+        nobeforeafter,
+        tcbox raise base,
+        size=small,
+        width=#1,
+        overlay unbroken and first={
+            \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #2};
+            \node[anchor=center] at (frame.center)
+            {\includegraphics[width=2in]{sign-pdf.pdf}};
+            }
+    }
+
+\newcommand{\blankdate}{\genblank[date]{\phantom{XX/XX/XXXX}}\ }
+\newcommand{\blankemployee}{\genblank[Employee]{\phantom{gFIRST/ MIDDLE/ LAST NAME}}\ }
+\newcommand{\blankaddress}{\genblank[Address]{
+    \phantom{NUMBER/ STREET / CITy/ STATE/PROVINCE/ COUNTRY }}}
+\newcommand{\blankwesign}{\genblank[Ross Mathematics Foundation]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+\newcommand{\blanktheysign}{\genblank[Employee]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+
+\usepackage{fontspec}
+\setmainfont{Roboto}
+\setsansfont{Noto Sans JP}
+\setmonofont{Roboto Mono}
+
+\begin{document}
+\maketitle
+
+%For this Agreement, please type the requested information into the %response spaces.
+%Print the document, add signatures of Parent (or legal guardian), and %of Student.  
+%Then scan the signed document to create a PDF file, and email that %file
+%to: \texttt{agreement@rossprogram.org} . \\
+
+On this \genblank[date]{\phantom{\hspace{1in}}}, I, \genblank[parent/guardian name]{\phantom{\hspace{3in}}}, 
+as parent or guardian,
+give permission for \genblank[student name]{\phantom{\hspace{2in}}} to attend the Ross Mathematics Program. 
+
+\begin{description}
+\item[Program Rules Agreement:] I, as student, understand and will
+  abide by the rules and regulations of the host institution as
+  well as those of the Ross Mathematics Program, as listed in the
+  ``Standards of Behavior.'' I, as parent or guardian, have read
+  these documents and agree that the student will abide by them.
+\item[Early Departure Agreement:] In the event that the Ross
+  administrators determine that the student is gaining no academic
+  benefits from the Program and/or acts in a manner that poses a
+  threat to the safety and/or wellbeing of themselves or others and/or
+  violates Program Rules, then I (as parent or guardian) agree that
+  the student will leave the Ross Program immediately, will be
+  returned to my custody, and I will assume responsibility for all
+  travel costs and all costs for receiving the student.
+  For the duration of the Program, I can be reached at:
+  \begin{itemize}
+    \item \genblank[email]{\phantom{\hspace{2in}}} 
+    \item \genblank[phone]{\phantom{\hspace{2in}}} 
+    \item \genblank[additional phone]{\phantom{\hspace{2in}}} 
+  \end{itemize}
+  I agree to respond to all messages within 24 hours. \\[1ex]
+  I, as student, agree to leave early if asked.  \\
+Program fees will not be returned for early departures.
+\item[Cell phones and other networked devices:] In order to contact
+his/her parents/guardian, each student is permitted to use a cell
+phone and/or laptop computer. Ross students are not otherwise
+permitted to use a cell phone or any other device containing a radio
+transmitter or connection to the internet (unless explicit permission has been given by a Ross staff person). The Ross Mathematics
+Foundation may require the use of certain applications or websites
+which may collect location data to ensure participants do not leave
+campus without approval.  The Ross Mathematics Foundation does not
+sell, give, or trade the data we store to any third parties for
+marketing purposes.
+\item[Property Agreement:] I/we agree to cover the cost of any loss of
+  or damage to any property for which the student is directly
+  personally responsible.
+\item[Lost key and key-card fees:] I, as parent or guardian, am
+financially responsible for the cost of changing locks and producing
+keys to residence hall doors if the student does not return his/her
+keys at check out.  Replacements for key-cards are at least \$50
+dollars; dorm room keys or bathroom keys are at least \$250 dollars to
+replace.  Additional charges to re-key locks may be levied if needed.
+\item[Health Insurance Agreement:] Prior to participation in the Ross
+  Program, I/we agree to acquire and maintain a policy of health
+  insurance covering hospitalization and medical treatment for any
+  illnesses or injuries incurred during participation in the
+  program. Such insurance shall be valid for the duration of the
+  Program and be issued by an insurance company authorized to do
+  business within the appropriate state in the USA.
+\item[Liability Release:] I/we hereby release and forever discharge
+  the the Ross Mathematics Foundation, 
+  the host institution, the Board  of Trustees, and 
+  all employees and officers and agents of these entities from any
+  and all claims, demands, or actions for personal injury, loss or
+  theft of personal property, or any other damages which may arise out
+  of or be in any way related to their conduct associated with the
+  Ross Mathematics Program.
+\item[Assumption of Risk:]  I understand that part of the camping experience involves activities and group interactions that may be new to my child, and that they come with uncertainties beyond what my child may be used to dealing with at home. Such risks include uneven terrain, extreme weather, standing and moving water, forested and other areas that may result in wildlife encounters including mammals, reptiles and insects that could result in infections and various insect-transmitted diseases, such activities as field and court sports, high and low elements courses, rock climbing, gymnastics, waterfront and mathematics as well as other activities. I am also aware that my child may participate in off-campus activities that involve additional risks. Knowing this I grant permission for my child to engage in these activities. In addition, there are certain unavoidable risks associated with various game and play activities such as collisions, wayward objects such as balls and other equipment and other risks. I am aware of these risks, and I am acknowledging and/or assuming them on behalf of my child. I realize that no environment is risk-free, and so I have instructed my child on the importance of abiding by the camp’s rules, and my child and I both agree that he or she is familiar with these rules and will obey.
+  \item[COVID-19:] Because our host institution is open for use
+by other individuals, I/we recognize that I am/we are at higher risk of 
+contracting COVID-19. With full awareness and appreciation of
+the risks involved, I, for myself and on behalf of my family, estate,
+heirs, executors, administrators, assigns, and personal representatives, 
+hereby forever release, waive, discharge, and covenant not to sue the 
+Ross Mathematics Foundation, its board members, administrators, and 
+employees (collectively the  ``Released Parties'') from any and all liability, 
+claims, demands, actions, and causes of action whatsoever, directly or 
+indirectly arising out of or related to any loss, damage, or injury, 
+including death, that may be sustained by me related to COVID-19 whether
+caused by the negligence of the Released Parties, any third-party using 
+the host institution's campus, or otherwise, while participating in any activity while in, on, 
+or around the host institution and/or while using any host institution facilities, tools, 
+equipment, or materials. I/we agree to indemnify, defend, and hold 
+harmless the Released Parties from and against any and all costs, expenses,
+damages, claims, lawsuits, judgments, losses, and/or liabilities 
+(including attorney fees) arising either directly or indirectly from or 
+related to any and all claims made by or against any of the Released 
+Parties due to bodily injury, death, loss of use, monetary loss, or 
+any other injury from or related to my use of the the host institution facilities,
+tools, equipment, or materials, whether caused by the negligence of 
+the Released Parties or otherwise specifically related to COVID-19.
+\item[Photo/Video Release:] I, as student, hereby grant the Ross
+  Mathematics Foundation permission to use my likeness in
+  photographs(s)/video in any and all of its publications and in any
+  and all other media, whether now known or hereafter existing. I will
+  make no monetary or other claim against the Ross Mathematics Foundation or
+  the host institution for the use of the photographs(s)/video. I, as parent or
+  guardian, give the Ross Mathematics Foundation permission to publish in
+  print, electronic, or video format the likeness or image of my
+  child. I release all claims against the Program and the University
+  with respect to copyright ownership and publication including any
+  claim for compensation related to use of the materials.
+\item[Transportation Agreement:] I, as parent or guardian, do hereby
+  grant Ross Mathematics Foundation administrators and counselors
+  permission to transport my child by personal, commercial, and/or
+  university vehicle, or by foot, to and from airports, all program
+  activities on and off-campus, and/or in the event of a medical
+  emergency.
+\end{description}
+I, as parent or guardian, agree to be available during the entire six
+week duration of the Ross Program to deal with emergencies and/or early
+departures.
+
+\vspace{0.5in}
+
+\hfill Signed \genblank[Parent or legal guardian]{\phantom{\hspace{3in}}} on this \genblank[Date]{\phantom{\hspace{1in}}}
+
+%\hfill Signed \blank{3in}{Parent or legal guardian}{parent}
+
+\vspace{0.5in}
+
+%\hfill  \rule{3in}{0.1mm}\\[-1.5mm]
+%\hspace*{3.7in} {\footnotesize \textcolor{gray}{Student signature} }
+
+
+%\hfill  \blank{3in}{Student}{student}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
