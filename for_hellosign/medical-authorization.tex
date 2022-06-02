@@ -1,0 +1,177 @@
+\documentclass{ross}
+\title{Medical Authorization}
+
+\usepackage[most]{tcolorbox}
+
+\renewcommand{\baselinestretch}{2}
+
+\newtcbox{\genblank}[1][]{
+    enhanced,
+    arc = 1pt,
+    nobeforeafter,
+    tcbox raise base,
+    size=small,
+    width=1in,
+    height=0.4in,
+    overlay unbroken and first={
+        \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #1};
+        }
+    }
+\newtcbox{\wesign}[2][]{
+        enhanced,
+        nobeforeafter,
+        tcbox raise base,
+        size=small,
+        width=#1,
+        overlay unbroken and first={
+            \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #2};
+            \node[anchor=center] at (frame.center)
+            {\includegraphics[width=2in]{sign-pdf.pdf}};
+            }
+    }
+
+\newcommand{\blankdate}{\genblank[date]{\phantom{XX/XX/XXXX}}\ }
+\newcommand{\blankemployee}{\genblank[Employee]{\phantom{gFIRST/ MIDDLE/ LAST NAME}}\ }
+\newcommand{\blankaddress}{\genblank[Address]{
+    \phantom{NUMBER/ STREET / CITy/ STATE/PROVINCE/ COUNTRY }}}
+\newcommand{\blankwesign}{\genblank[Ross Mathematics Foundation]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+\newcommand{\blanktheysign}{\genblank[Employee]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+
+\usepackage{fontspec}
+\setmainfont{Roboto}
+\setsansfont{Noto Sans JP}
+\setmonofont{Roboto Mono}
+
+\begin{document}
+\maketitle
+
+%\textsc{Instructions:} Type the information where indicated here, 
+%then print this document and write in the medical information %requested.
+%Then scan that paper copy as a PDF file, and email it to:
+%\begin{center}
+%  \ttfamily \color{blue} medical@rossprogram.org
+%\end{center}
+
+During the \the\year\ Ross Program, I, \genblank[parent/guardian name]{\phantom{\hspace{2.5in}}}, 
+the parent/guardian of \genblank[student name]{\phantom{\hspace{2.5in}}} (the ``Participant''), 
+can be reached at \genblank[phone number]{\phantom{\hspace{1.5in}}}.
+
+My medical insurance information is given below:
+\begin{itemize}
+  \item My medical insurance is provided by: \hfill \genblank[insurance company]{\phantom{\hspace{1.5in}}}
+  \item The phone number for my medical insurance provider is: \hfill \genblank[insurance phone number]{\phantom{\hspace{1.5in}}}
+  \item The policy holder's name is: \hfill \genblank[policy holder]{\phantom{\hspace{1.5in}}}
+  \item The policy holder's DOB is: \hfill \genblank[birthday]{\phantom{\hspace{1.5in}}}
+  \item My medical insurance policy number is: \hfill \genblank[policy number]{\phantom{\hspace{1.5in}}}
+  \item My group number is: \hfill \genblank[group number]{\phantom{\hspace{1.5in}}}
+  \item My group name is: \hfill \genblank[group name]{\phantom{\hspace{1.5in}}}
+\end{itemize}
+
+I understand that every reasonable effort will be made to contact me
+at the contact information I have provided in the event of an
+emergency.  In the event that I cannot be located immediately, the
+authorities of the Ross Mathematics Foundation may take such temporary
+measures as they deem necessary.  I give permission to physicians selected by the Ross Mathematics Foundation to treat, hospitalize, order injection, anesthesia, or surgery for the Participant.  I give permission for the release of this health information form as well as any accompanying information or medical records to medical professionals in the event of injury or illness.
+
+To the best of my knowledge and belief, the Participant is and has
+been in normal good health and is free from all communicable or
+contagious diseases. Should the Participant manifest any condition
+where there appears to be reasonable grounds for suspecting the
+presence of a communicable or contagious disease, I agree that a
+physical examination may be performed. Also, I agree that if any such
+disease is found, the Participant will comply with the regular
+quarantine or isolation procedures of the camp and of the community.
+I agree that the Participant will submit to surveillance testing for
+COVID--19 which may include mandatory antigen or PCR tests.
+
+Describe below any medical conditions or concerns,
+dietary/seasonal/medical allergies, non-allergy dietary restrictions,
+and disability accommodations of which we should be aware:
+
+\begin{tcolorbox}[enhanced,overlay unbroken and first={
+  \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} medical conditions};
+  }]
+  \vspace{1in}
+\end{tcolorbox}
+
+I understand that certain prescription medications are considered to
+be ``controlled substances'' and require dispensation by a medical
+professional. I also understand that I may authorize my child to
+self-administer certain other medications, and/or I may authorize the
+Ross Mathematics Program counselors to administer certain other
+medications.
+
+The Participant will be bringing the following prescription medications:
+
+\begin{tcolorbox}[enhanced,overlay unbroken and first={
+  \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} prescription medications};
+  }]
+  \vspace{1in}
+\end{tcolorbox}
+
+I understand that certain prescription medications must be stored in a special manner. Please describe any special instructions related to the storage of medications for the Participant:
+
+\begin{tcolorbox}[enhanced,overlay unbroken and first={
+  \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} special instructions};
+  }]
+  \vspace{1in}
+\end{tcolorbox}
+
+In addition to the \emph{prescription} medications listed above, the Participant will also be bringing the following \emph{non-prescription} medications:
+
+\begin{tcolorbox}[enhanced,overlay unbroken and first={
+  \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} non-prescription medications};
+  }]
+  \vspace{1in}
+\end{tcolorbox}
+
+I authorize my child to:
+\begin{itemize}
+  \item self-administer the \phantom{non-}prescription medications listed above: \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+  \item self-administer the non-prescription medications listed above:  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+\end{itemize}
+
+I authorize the Ross Math Program counselors to:
+\begin{itemize}
+  \item administer the \phantom{non-}prescription medications listed above:  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+  \item administer the non-prescription medications listed above:  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+\end{itemize}
+
+In the event that my child experiences a headache, fever, nausea,
+sunburn, muscle pain, or other minor ailment and has not brought with
+them an appropriate medication to treat such ailment, I authorize the
+Ross Mathematics Program counselors to administer the following
+non-prescription medications to my child:
+
+\begin{itemize}
+  \item Acetaminophen (Tylenol): \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+  \item Aspirin: \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+  \item Ibuprofen (Advil):  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}} 
+  \item Naproxen (Aleve):  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}} 
+  \item Calcium Carbonate (Tums):  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+  \item Bismuth Subsalicylate (Pepto-Bismol):  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}} 
+  \item Calamine Lotion:  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+  \item Sunscreen:  \hfill \genblank[yes]{\phantom{XX}} \genblank[no]{\phantom{XX}}
+\end{itemize}
+
+%\vspace{0.25in}
+%Signed \rule{3in}{.1mm}  on this  \blank{1in}{Date}{date}\\[-5pt]
+%\hspace*{1in}{\footnotesize \textcolor{gray}{Parent or legal guardian} }
+
+\vskip 1in
+
+\hfill Signed \genblank[Parent or legal guardian]{\phantom{\hspace{3in}}} on this \genblank[Date]{\phantom{\hspace{1in}}}
+
+\end{document}
+
+
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
