@@ -30,19 +30,24 @@
 \setlength{\parskip}{1.5ex}
 
 
-\newcommand{\dormname}{Lynam Hall}
-\newcommand{\dormaddress}{1216 Sunbury Road, Columbus, OH 43219}
-\newcommand{\orientationlocation}{Spangler Learning Center}
+\newcommand{\dormname}{Sansbury Hall}
+\newcommand{\dormaddress}{1 S Grove St, Westerville, OH 43081}
+\newcommand{\orientationlocation}{the Theatre}
 \newcommand{\checkinlocation}{Lynam Hall}
 \newcommand{\totalfee}{\$6000}
-\newcommand{\campus}{Ohio Dominican University}
+\newcommand{\campus}{Otterbein University}
 \newcommand{\feeduedate}{May 20, \the\year}
 
 \usepackage{advdate}
 \usepackage{datetime}
 \newdateformat{rossdate}{\THEDAY\ \monthname[\THEMONTH] \THEYEAR}
-\newcommand{\startsunday}{\rossdate\SetDate[28/06/2019]}
-\newcommand{\finishfriday}{\rossdate\SetDate[07/08/2019]}
+\newcommand{\startsunday}{\rossdate\SetDate[11/06/2023]}
+\newcommand{\finishfriday}{\rossdate\SetDate[21/07/2023]}
+
+\renewcommand{\campus}{Rose-Hulman University}
+\renewcommand{\startsunday}{\rossdate\SetDate[18/06/2023]}
+\renewcommand{\finishfriday}{\rossdate\SetDate[28/07/2023]}
+
 
 \usepackage{calc}
 \newcommand{\blank}[3]{\begin{Form}\raisebox{-2ex}{\color{gray}{\raisebox{0ex}[0ex][1ex]{\makebox[0in][l]{\makebox[#1][c]{\footnotesize #2}}}}}\underline{\TextField[width=#1,name=#3]{}}\end{Form}}
