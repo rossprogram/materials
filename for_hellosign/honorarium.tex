@@ -1,0 +1,71 @@
+\documentclass{ross}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+
+\renewcommand{\baselinestretch}{2}
+
+\newtcbox{\genblank}[1][]{
+    enhanced,
+    nobeforeafter,
+    tcbox raise base,
+    size=small,
+    width=1in,
+    height=0.4in,
+    overlay unbroken and first={
+        \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #1};
+        }
+    }
+\newtcbox{\wesign}[1][]{
+        enhanced,
+        nobeforeafter,
+        tcbox raise base,
+        size=small,
+        width=1in,
+        overlay unbroken and first={
+            \node[anchor=north,inner sep=1pt] at (frame.south) {\scriptsize\color{gray} #1};
+            \node[anchor=center] at (frame.center)
+            {\includegraphics[width=3in]{sign-pdf.pdf}};
+            }
+    }
+
+\newcommand{\blankdate}{\genblank[date]{\phantom{XX/XX/XXXX}}\ }
+\newcommand{\blankemployee}{\genblank[Employee]{\phantom{gFIRST/ MIDDLE/ LAST NAME}}\ }
+\newcommand{\blankaddress}{\genblank[Address]{
+    \phantom{NUMBER/ STREET / CITy/ STATE/PROVINCE/ COUNTRY }}}
+\newcommand{\blankwesign}{\genblank[Ross Mathematics Foundation]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+\newcommand{\blanktheysign}{\genblank[Employee]{
+    \Huge\phantom{X/X\hspace{3in}}}}
+
+\usepackage{unicode-math}
+\setmainfont{Roboto}
+\setsansfont{Noto Sans JP}
+\setmonofont{Roboto Mono}
+\setmathfont{Fira Math}
+
+\title{Honorarium}
+\geometry{top=1.75in,bottom=1in}
+\begin{document}
+\maketitle
+
+Thank you for lending your time and talent to the Ross Mathematics Program. Please fill out the information below so that we may compensate you with an honorarium. 
+
+\subsection*{Personal Information}
+
+\begin{itemize}[label={$\blackpointerright$}]
+    \item My full name is: \hfill \genblank[name]{\phantom{\hspace{3in}}}
+    \item My home address is: \hfill \genblank[address]{\phantom{\hspace{3in}}}
+    \item My social security number is: \hfill \genblank[SSN]{\phantom{\hspace{3in}}}
+    \item My date of birth is: \hfill \genblank[birthday]{\phantom{\hspace{3in}}}
+    \item My email address is: \hfill \genblank[email]{\phantom{\hspace{3in}}}
+\end{itemize}
+
+\subsection*{Banking Information}
+\begin{itemize}[label={$\blackpointerright$}]
+    \item My account type is (checking or savings): \hfill \genblank[account type]{\phantom{\hspace{3in}}}
+    \item My account number is: \hfill \genblank[account number]{\phantom{\hspace{3in}}}
+    \item My routing number is: \hfill \genblank[routing number]{\phantom{\hspace{3in}}}
+\end{itemize}
+
+   
+\end{document}
